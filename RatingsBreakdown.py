@@ -14,5 +14,5 @@ class RatingsBreakdown(MRJob):
     def reducer_count_ratings(self, key, values):
         yield key, sum(values)
 
-    if __name__=='__main__':
-        RatingsBreakdown.run()               
+if __name__=='__main__':
+    RatingsBreakdown.run()               
